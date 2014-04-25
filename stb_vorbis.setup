@@ -1,0 +1,7 @@
+(compile -d0 -O2 -J -s stb_vorbis.scm)
+(compile -d0 -O2 -s stb_vorbis.import.scm)
+
+(install-extension
+ 'stb_vorbis
+ '("stb_vorbis.so" "stb_vorbis.import.so")
+ '((version "0.0.1")))

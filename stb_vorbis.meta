@@ -1,0 +1,7 @@
+((synopsis "Bindings to stb_vorbis.")
+ (author "Jubjub")
+ (category sound)
+ (license "MIT")
+ (depends)
+ (test-depends)
+ (foreign-depends))
