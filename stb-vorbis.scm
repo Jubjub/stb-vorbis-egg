@@ -1,4 +1,7 @@
-(foreign-declare  "#include \"stb_vorbis.c\"")
+(foreign-declare  "#ifndef STB_VORBIS_C\n
+                   #define STB_VORBIS_C\n 
+                   #include \"stb_vorbis.c\"
+                   #endif")
 
 (module stb-vorbis *
         (import chicken scheme foreign lolevel)
