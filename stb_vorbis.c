@@ -356,7 +356,6 @@ enum STBVorbisError
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#ifndef STB_VORBIS_HEADER_ONLY
 
 // global configuration settings (e.g. set these in the project/makefile),
 // or just set them in this file at the top (although ideally the first few
@@ -807,6 +806,8 @@ struct stb_vorbis
    int channel_buffer_start;
    int channel_buffer_end;
 };
+
+#ifndef STB_VORBIS_HEADER_ONLY
 
 extern int my_prof(int slot);
 //#define stb_prof my_prof
